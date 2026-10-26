@@ -1,3 +1,5 @@
 console.lofg("Hello, World!");
 const name = "Tomi";
-console.log("Hello, " + name + "!");
+const nim  = "24250004";
+console.log("Halo, " + name + "!," + "anda sedang belajar Node.js");
+console.log("NIM anda adalah: " + nim);
