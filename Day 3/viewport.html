@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>InventarisKu</title>
+  <link rel="stylesheet" href="style-viewport.css">
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>InventarisKu</h1>
+      <p>Dashboard pengelolaan barang</p>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">Dashboard</a>
+      <a href="#">Barang</a>
+      <a href="#">Laporan</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="summary">
+      <article class="card">
+        <h2>Total Barang</h2>
+        <p class="number">120</p>
+      </article>
+
+      <article class="card">
+        <h2>Barang Tersedia</h2>
+        <p class="number success">95</p>
+      </article>
+
+      <article class="card">
+        <h2>Barang Dipinjam</h2>
+        <p class="number warning">25</p>
+      </article>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>Daftar Barang</h2>
+        <button class="btn-primary" type="button">
+          + Tambah Barang
+        </button>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Kode</th>
+              <th>Nama Barang</th>
+              <th>Kategori</th>
+              <th>Jumlah</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>INV-001</td>
+              <td>Laptop</td>
+              <td>Elektronik</td>
+              <td>20</td>
+              <td><span class="badge tersedia">Tersedia</span></td>
+            </tr>
+
+            <tr>
+              <td>INV-002</td>
+              <td>Proyektor</td>
+              <td>Elektronik</td>
+              <td>5</td>
+              <td><span class="badge dipinjam">Dipinjam</span></td>
+            </tr>
+
+            <tr>
+              <td>INV-003</td>
+              <td>Kursi</td>
+              <td>Furniture</td>
+              <td>50</td>
+              <td><span class="badge tersedia">Tersedia</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 InventarisKu — Latihan Junior Web Developer</p>
+  </footer>
+</body>
+</html>

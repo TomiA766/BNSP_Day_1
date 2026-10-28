@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma CV - Premium Editable CV Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <svg class="nav-logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <line x1="7" y1="8" x2="17" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="7" y1="12" x2="17" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="7" y1="16" x2="13" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="nav-logo-text">Forma CV</span>
+            </div>
+            <div class="nav-divider"></div>
+            <div class="nav-document">
+                <span class="nav-document-label">Untitled Resume</span>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-indicator">
+                <span class="nav-indicator-dot"></span>
+                <span class="nav-indicator-text">Live Preview</span>
+            </div>
+            <a href="#print-instructions" class="nav-print-btn">
+                <svg class="nav-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <polyline points="6 9 6 2 18 2 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="6" y="14" width="12" height="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Print / Save PDF
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="workspace">
+        <!-- Left Column - CV Editor -->
+        <aside class="editor-panel">
+            <div class="editor-header">
+                <h1 class="editor-title">CV Editor</h1>
+                <p class="editor-subtitle">Edit form fields below. Your changes appear in the preview.</p>
+            </div>
+
+            <!-- Personal Information -->
+            <details class="editor-section" open>
+                <summary class="editor-section-summary">
+                    <span class="editor-section-title">Personal Information</span>
+                    <svg class="editor-section-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </summary>
+                <div class="editor-section-content">
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" id="fullName" class="form-input" value="Alexandra Morgan" placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="professionalTitle" class="form-label">Professional Title</label>
+                        <input type="text" id="professionalTitle" class="form-input" value="Senior Product Designer" placeholder="e.g., Software Engineer">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group-half">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-input" value="alexandra.morgan@example.com" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group form-group-half">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" class="form-input" value="+62 812 3456 7890" placeholder="+62 xxx xxx xxx">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" id="location" class="form-input" value="Jakarta, Indonesia" placeholder="City, Country">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group-half">
+                            <label for="linkedin" class="form-label">LinkedIn URL</label>
+                            <input type="url" id="linkedin" class="form-input" value="https://linkedin.com/in/alexandramorgan" placeholder="https://linkedin.com/in/...">
+                        </div>
+                        <div class="form-group form-group-half">
+                            <label for="portfolio" class="form-label">Portfolio URL</label>
+                            <input type="url" id="portfolio" class="form-input" value="https://alexandramorgan.design" placeholder="https://...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="profilePhoto" class="form-label">Profile Photo (optional)</label>
+                        <input type="text" id="profilePhoto" class="form-input" placeholder="Image URL or description" value="">
+                        <p class="form-hint">Use placeholder or leave empty</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="profileSummary" class="form-label">Profile Summary</label>
+                        <textarea id="profileSummary" class="form-textarea" rows="4" placeholder="Brief professional summary...">Results-driven Senior Product Designer with 8+ years of experience crafting user-centered digital products. Proven track record of leading design systems, improving conversion rates, and collaborating cross-functionally to deliver scalable solutions.</textarea>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Work Experience -->
+            <details class="editor-section" open>
+                <summary class="editor-section-summary">
+                    <span class="editor-section-title">Work Experience</span>
+                    <svg class="editor-section-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </summary>
+                <div class="editor-section-content">
+                    <div class="experience-item">
+                        <div class="experience-item-header">
+                            <span class="experience-item-title">Experience 1</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobTitle1" class="form-label">Job Title</label>
+                            <input type="text" id="jobTitle1" class="form-input" value="Senior Product Designer">
+                        </div>
+                        <div class="form-group">
+                            <label for="company1" class="form-label">Company Name</label>
+                            <input type="text" id="company1" class="form-input" value="TechNova Solutions">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group form-group-half">
+                                <label for="period1" class="form-label">Employment Period</label>
+                                <input type="text" id="period1" class="form-input" value="2022 - Present">
+                            </div>
+                            <div class="form-group form-group-half">
+                                <label for="locationExp1" class="form-label">Location</label>
+                                <input type="text" id="locationExp1" class="form-input" value="Jakarta, Indonesia">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobDesc1" class="form-label">Job Description</label>
+                            <textarea id="jobDesc1" class="form-textarea" rows="4">- Led design system architecture, reducing component duplication by 65%
+- Improved user onboarding flow, increasing conversion by 42%
+- Collaborated with product and engineering teams to ship 20+ features</textarea>
+                        </div>
+                    </div>
+
+                    <div class="experience-divider"></div>
+
+                    <div class="experience-item">
+                        <div class="experience-item-header">
+                            <span class="experience-item-title">Experience 2</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobTitle2" class="form-label">Job Title</label>
+                            <input type="text" id="jobTitle2" class="form-input" value="Product Designer">
+                        </div>
+                        <div class="form-group">
+                            <label for="company2" class="form-label">Company Name</label>
+                            <input type="text" id="company2" class="form-input" value="DigitalEdge Agency">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group form-group-half">
+                                <label for="period2" class="form-label">Employment Period</label>
+                                <input type="text" id="period2" class="form-input" value="2019 - 2022">
+                            </div>
+                            <div class="form-group form-group-half">
+                                <label for="locationExp2" class="form-label">Location</label>
+                                <input type="text" id="locationExp2" class="form-input" value="Bandung, Indonesia">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobDesc2" class="form-label">Job Description</label>
+                            <textarea id="jobDesc2" class="form-textarea" rows="4">- Designed mobile and web applications for 15+ clients
+- Conducted user research and usability testing
+- Created wireframes, prototypes, and high-fidelity designs</textarea>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Education -->
+            <details class="editor-section" open>
+                <summary class="editor-section-summary">
+                    <span class="editor-section-title">Education</span>
+                    <svg class="editor-section-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </summary>
+                <div class="editor-section-content">
+                    <div class="form-group">
+                        <label for="degree" class="form-label">Degree</label>
+                        <input type="text" id="degree" class="form-input" value="Bachelor of Design">
+                    </div>
+                    <div class="form-group">
+                        <label for="school" class="form-label">School / University</label>
+                        <input type="text" id="school" class="form-input" value="Institut Teknologi Bandung">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group-half">
+                            <label for="graduationYear" class="form-label">Graduation Year</label>
+                            <input type="text" id="graduationYear" class="form-input" value="2019">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="educationDesc" class="form-label">Description</label>
+                        <textarea id="educationDesc" class="form-textarea" rows="3">Focused on User Interface Design and Human-Computer Interaction. Graduated with honors.</textarea>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Skills -->
+            <details class="editor-section" open>
+                <summary class="editor-section-summary">
+                    <span class="editor-section-title">Skills</span>
+                    <svg class="editor-section-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </summary>
+                <div class="editor-section-content">
+                    <div class="form-group">
+                        <label for="technicalSkills" class="form-label">Technical Skills</label>
+                        <textarea id="technicalSkills" class="form-textarea" rows="3" placeholder="e.g., Figma, Adobe XD, HTML/CSS">Figma, Adobe XD, Prototyping, Design Systems, HTML/CSS, User Research</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="softSkills" class="form-label">Soft Skills</label>
+                        <textarea id="softSkills" class="form-textarea" rows="3" placeholder="e.g., Leadership, Communication">Leadership, Problem Solving, Communication, Team Collaboration</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="languages" class="form-label">Languages</label>
+                        <textarea id="languages" class="form-textarea" rows="2" placeholder="e.g., Indonesian (Native), English (Fluent)">Indonesian (Native), English (Fluent), Japanese (Basic)</textarea>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Projects -->
+            <details class="editor-section" open>
+                <summary class="editor-section-summary">
+                    <span class="editor-section-title">Projects</span>
+                    <svg class="editor-section-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </summary>
+                <div class="editor-section-content">
+                    <div class="form-group">
+                        <label for="projectName" class="form-label">Project Name</label>
+                        <input type="text" id="projectName" class="form-input" value="E-Commerce Platform Redesign">
+                    </div>
+                    <div class="form-group">
+                        <label for="projectUrl" class="form-label">Project URL</label>
+                        <input type="url" id="projectUrl" class="form-input" value="https://example.com/project">
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDesc" class="form-label">Description</label>
+                        <textarea id="projectDesc" class="form-textarea" rows="3">Complete redesign of an e-commerce platform, improving user experience and increasing mobile conversion rates by 35%.</textarea>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Certifications -->
+            <details class="editor-section">
+                <summary class="editor-section-summary">
+                    <span class="editor-section-title">Certifications (optional)</span>
+                    <svg class="editor-section-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </summary>
+                <div class="editor-section-content">
+                    <div class="form-group">
+                        <label for="certName" class="form-label">Certification Name</label>
+                        <input type="text" id="certName" class="form-input" value="Google UX Design Certificate">
+                    </div>
+                    <div class="form-group">
+                        <label for="certIssuer" class="form-label">Issuer</label>
+                        <input type="text" id="certIssuer" class="form-input" value="Google">
+                    </div>
+                    <div class="form-group">
+                        <label for="certDate" class="form-label">Date</label>
+                        <input type="text" id="certDate" class="form-input" value="2021">
+                    </div>
+                </div>
+            </details>
+
+            <!-- Print Instructions -->
+            <section id="print-instructions" class="print-instructions">
+                <h2 class="print-instructions-title">Print / Save PDF</h2>
+                <p class="print-instructions-text">To save this CV as PDF or print it:</p>
+                <ol class="print-instructions-list">
+                    <li>Press <strong>Ctrl+P</strong> (Windows/Linux) or <strong>⌘+P</strong> (Mac)</li>
+                    <li>Set destination to <strong>Save as PDF</strong> or your printer</li>
+                    <li>The navigation, editor panel, and controls will be hidden automatically</li>
+                    <li>Only the CV preview will be printed</li>
+                </ol>
+                <p class="print-instructions-note">Use browser's native print functionality. No JavaScript is used.</p>
+            </section>
+        </aside>
+
+        <!-- Right Column - Live CV Preview -->
+        <section class="preview-panel">
+            <div class="preview-header">
+                <h2 class="preview-title">Live CV Preview</h2>
+                <p class="preview-subtitle">Edit directly on the CV using contenteditable</p>
+            </div>
+            <div class="preview-container">
+                <article class="cv-page" contenteditable="true" spellcheck="false">
+                    <!-- Header -->
+                    <header class="cv-header">
+                        <h1 class="cv-name">Alexandra Morgan</h1>
+                        <p class="cv-title">Senior Product Designer</p>
+                        <div class="cv-contact">
+                            <div class="cv-contact-item">
+                                <svg class="cv-contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>alexandra.morgan@example.com</span>
+                            </div>
+                            <div class="cv-contact-item">
+                                <svg class="cv-contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>+62 812 3456 7890</span>
+                            </div>
+                            <div class="cv-contact-item">
+                                <svg class="cv-contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Jakarta, Indonesia</span>
+                            </div>
+                            <div class="cv-contact-item">
+                                <svg class="cv-contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>linkedin.com/in/alexandramorgan</span>
+                            </div>
+                            <div class="cv-contact-item">
+                                <svg class="cv-contact-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>alexandramorgan.design</span>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Profile Summary -->
+                    <section class="cv-section">
+                        <h2 class="cv-section-title">Profile Summary</h2>
+                        <p class="cv-section-text">Results-driven Senior Product Designer with 8+ years of experience crafting user-centered digital products. Proven track record of leading design systems, improving conversion rates, and collaborating cross-functionally to deliver scalable solutions.</p>
+                    </section>
+
+                    <!-- Work Experience -->
+                    <section class="cv-section">
+                        <h2 class="cv-section-title">Work Experience</h2>
+                        <div class="cv-experience-item">
+                            <div class="cv-experience-header">
+                                <div>
+                                    <h3 class="cv-experience-role">Senior Product Designer</h3>
+                                    <p class="cv-experience-company">TechNova Solutions</p>
+                                </div>
+                                <div class="cv-experience-meta">
+                                    <p class="cv-experience-period">2022 - Present</p>
+                                    <p class="cv-experience-location">Jakarta, Indonesia</p>
+                                </div>
+                            </div>
+                            <ul class="cv-experience-list">
+                                <li>Led design system architecture, reducing component duplication by 65%</li>
+                                <li>Improved user onboarding flow, increasing conversion by 42%</li>
+                                <li>Collaborated with product and engineering teams to ship 20+ features</li>
+                            </ul>
+                        </div>
+                        <div class="cv-experience-item">
+                            <div class="cv-experience-header">
+                                <div>
+                                    <h3 class="cv-experience-role">Product Designer</h3>
+                                    <p class="cv-experience-company">DigitalEdge Agency</p>
+                                </div>
+                                <div class="cv-experience-meta">
+                                    <p class="cv-experience-period">2019 - 2022</p>
+                                    <p class="cv-experience-location">Bandung, Indonesia</p>
+                                </div>
+                            </div>
+                            <ul class="cv-experience-list">
+                                <li>Designed mobile and web applications for 15+ clients</li>
+                                <li>Conducted user research and usability testing</li>
+                                <li>Created wireframes, prototypes, and high-fidelity designs</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Education -->
+                    <section class="cv-section">
+                        <h2 class="cv-section-title">Education</h2>
+                        <div class="cv-education-item">
+                            <div class="cv-education-header">
+                                <div>
+                                    <h3 class="cv-education-degree">Bachelor of Design</h3>
+                                    <p class="cv-education-school">Institut Teknologi Bandung</p>
+                                </div>
+                                <div class="cv-education-meta">
+                                    <p class="cv-education-year">2019</p>
+                                </div>
+                            </div>
+                            <p class="cv-education-desc">Focused on User Interface Design and Human-Computer Interaction. Graduated with honors.</p>
+                        </div>
+                    </section>
+
+                    <!-- Skills -->
+                    <section class="cv-section">
+                        <h2 class="cv-section-title">Skills</h2>
+                        <div class="cv-skills-group">
+                            <h3 class="cv-skills-group-title">Technical Skills</h3>
+                            <div class="cv-skills-chips">
+                                <span class="cv-skill-chip">Figma</span>
+                                <span class="cv-skill-chip">Adobe XD</span>
+                                <span class="cv-skill-chip">Prototyping</span>
+                                <span class="cv-skill-chip">Design Systems</span>
+                                <span class="cv-skill-chip">HTML/CSS</span>
+                                <span class="cv-skill-chip">User Research</span>
+                            </div>
+                        </div>
+                        <div class="cv-skills-group">
+                            <h3 class="cv-skills-group-title">Soft Skills</h3>
+                            <div class="cv-skills-chips">
+                                <span class="cv-skill-chip">Leadership</span>
+                                <span class="cv-skill-chip">Problem Solving</span>
+                                <span class="cv-skill-chip">Communication</span>
+                                <span class="cv-skill-chip">Team Collaboration</span>
+                            </div>
+                        </div>
+                        <div class="cv-skills-group">
+                            <h3 class="cv-skills-group-title">Languages</h3>
+                            <div class="cv-skills-chips">
+                                <span class="cv-skill-chip">Indonesian (Native)</span>
+                                <span class="cv-skill-chip">English (Fluent)</span>
+                                <span class="cv-skill-chip">Japanese (Basic)</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Projects -->
+                    <section class="cv-section">
+                        <h2 class="cv-section-title">Projects</h2>
+                        <div class="cv-project-item">
+                            <div class="cv-project-header">
+                                <h3 class="cv-project-name">E-Commerce Platform Redesign</h3>
+                                <a href="https://example.com/project" class="cv-project-link" target="_blank" rel="noopener noreferrer">example.com/project</a>
+                            </div>
+                            <p class="cv-project-desc">Complete redesign of an e-commerce platform, improving user experience and increasing mobile conversion rates by 35%.</p>
+                        </div>
+                    </section>
+
+                    <!-- Certifications -->
+                    <section class="cv-section">
+                        <h2 class="cv-section-title">Certifications</h2>
+                        <div class="cv-cert-item">
+                            <div class="cv-cert-header">
+                                <h3 class="cv-cert-name">Google UX Design Certificate</h3>
+                                <span class="cv-cert-date">2021</span>
+                            </div>
+                            <p class="cv-cert-issuer">Google</p>
+                        </div>
+                    </section>
+                </article>
+            </div>
+            <p class="preview-note">Tip: Click directly on any text in the CV preview to edit it. Use the editor panel on the left as a guide or for structured input.</p>
+        </section>
+    </main>
+</body>
+</html>
